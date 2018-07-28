@@ -1,0 +1,185 @@
+{* Страница товара *}
+{foreach from=$category->path item=cat}{assign var=foocat value=$cat->name}{/foreach}
+<!--<h1 class="kat{$category->id}" data-product="{$product->id}">{$foocat} {$brand->name|escape} {$product->name|escape}</h1>-->
+<div class="path" style="margin-top:-17px;">
+	<a href="./">Главная</a>
+	{foreach from=$category->path item=cat}
+	/ <a href="/{$cat->url}">{$cat->name|escape}</a>
+	{/foreach}
+	<!--{if $brand}
+	/ <a href="/{$cat->url}/{$brand->url}">{$brand->name|escape}</a>
+	{/if}-->
+	/  {$product->name|escape}                
+</div>
+
+
+
+
+<div id="produkthead{$category->id}">
+
+<h1 class="prod">{$foocat} {$brand->name|escape}: {$product->name|escape}</h1> 
+<span class="strg7">   </span> 
+<div style="clear:both;"></div>
+
+
+    
+{if $product->image}
+	<a href="{$product->image->filename|resize:800:600:w}" class="prod_img fancybox" rel="gallery1"><img class="img-polaroid" src="{$product->image->filename|resize:220:220}" alt="{$product->name|escape}" /></a>
+{/if}
+
+{if $product->images|count>1}
+	<div class="small_photo">
+		{* cut удаляет первую фотографию, если нужно начать 2-й - пишем cut:2 и тд *}
+		{foreach $product->images|cut as $i=>$image}
+			<a href="{$image->filename|resize:800:600:w}" class="fancybox" rel="gallery1"><img class="img-polaroid" src="{$image->filename|resize:95:95}" alt="{$product->name|escape}" /></a>
+		{/foreach}
+	</div>
+	{/if}
+
+<a style="position:relative;top:16px;" class="zakaz btn btn-danger" href="#myModal2" data-toggle="modal"><i class="icon-shopping-cart icon-white"></i> Заказать в один клик</a> 
+
+<div style="clear:both;"></div>
+
+
+<div class="inhaltwrapper inhaltwrapper">
+<div class="inhalttext">
+    {$product->annotation}
+    
+    {$product->body}
+    
+    
+    {if $product->harakt}
+		<div class="kat{$category->id} h1 mt10 shad_bt">Характеристики: {$product->name}</div>
+        {if $product->features}
+        <ul class="details">
+            {foreach $product->features as $f}
+            <li>
+                <span>{$f->name}: {$f->value}</span>
+            </li>
+            {/foreach}
+        </ul>
+        {/if}
+        
+        {$product->harakt}
+	{/if}
+    
+    
+	{if $product->video}
+    <div style="clear:both"></div>
+    <a name="vid"></a>
+    <div class="h1 mt20 mb5 kat{$category->id}">Видео обзор: {$product->name}</div>
+    <div class="video">
+    	<iframe width="560" height="315" src="http://www.youtube.com/embed/{$product->video}?rel=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+	{/if}
+    
+    
+    
+    </div>
+</div> 
+
+
+
+
+    {* Связанные товары *}
+    {if $related_products}
+    <div style="clear:both"></div>
+    <div class="h1 mt10 kat{$category->id}">Аксессуары для {$product->name}</div>
+    <div class="pr_sov">
+        {foreach $related_products as $product}
+        <a href="{$product->cat_url}/u_{$product->url}">
+            <span class="img"><img src="{$product->image->filename|resize:155:155}" alt="{$product->name|escape}"/></span>
+            {$product->name|escape}
+        </a>
+        {/foreach}
+    </div>
+    {/if}
+
+
+
+	{if $prev_product || $next_product}
+    <div style="clear:both"></div>
+    <div class="h1 mt10 kat{$category->id}">Так же советуем посмотреть:</div>
+    <div class="catalog pr_sov">
+    	{if $prev_product2}
+			<a href="{$prev_product2->cat_url}/u_{$prev_product2->url}">
+            	<span class="img"><img src="{$prev_product2->image->filename|resize:155:155}" alt="{$product2->name|escape}"/></span>
+                {$prev_product2->name|escape}
+            </a>
+		{/if}
+    	{if $prev_product}
+			<a href="{$prev_product->cat_url}/u_{$prev_product->url}">
+            	<span class="img"><img src="{$prev_product->image->filename|resize:155:155}" alt="{$product->name|escape}"/></span>
+                {$prev_product->name|escape}
+            </a>
+		{/if}
+        {if $next_product}
+			<a href="{$next_product->cat_url}/u_{$next_product->url}">
+            	<span class="img"><img src="{$next_product->image->filename|resize:155:155}" alt="{$product->name|escape}"/></span>
+                {$next_product->name|escape}
+            </a>
+		{/if}
+        {if $next_product2}
+			<a href="{$next_product2->cat_url}/u_{$next_product2->url}">
+            	<span class="img"><img src="{$next_product2->image->filename|resize:155:155}" alt="{$product2->name|escape}"/></span>
+                {$next_product2->name|escape}
+            </a>
+		{/if}
+    </div>
+    {/if}
+    </div>
+    
+    
+    
+    
+    
+    <!-- Modal -->
+<div id="myModal2" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">Оформить заказ</h3>
+  </div>
+  <div class="modal-body">
+    <div class="obr_zvon">
+        <span><em class="red">*</em>Количество</span> <input style="width:30px;text-align:center;" class="oza_kol" value="1" type="text">
+        <div class="cl"></div>
+        <span><em class="red">*</em>Ваше имя</span> <input class="oza_name" type="text">
+        <div class="cl"></div>
+    	<span><em class="red">*</em>Телефон</span> <input class="oza_tel" type="text">
+        <div class="cl"></div>
+    	<span><em class="red">*</em>Город</span>  <input class="oza_cit" type="text">
+    </div>
+    <div class="oz_comment">
+        <div class="mt45">Напишите, как к Вам обращаться, а так же номер телефона.</div>
+        <div class="mt15">Важно указать правильный телефон, иначе мы не сможем дозвониться.</div>
+        <div class="mt15">Укажите свой город, что бы наш менеджер связался с Вами.</div>
+    </div>
+    <div class="cl"></div> 
+    <div id="erro_home_kredit" style="display:none" class="alert alert-error"><strong>Ошибка!</strong> Вы не заполнили</div>
+     <div id="success_home_kredit" style="display:none" class="alert alert-success"><strong>Спасибо!</strong> Ваша заявка отправлена.</div>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Отмена</button>
+    <button class="btn btn-success" onClick="post_oza()">Оформить</button>
+  </div>
+</div>
+    
+    
+{literal}
+<script>
+$(function() {
+	// Раскраска строк характеристик
+	$(".features li:even").addClass('even');
+
+	// Зум картинок
+	// $("a.zoom").fancybox({ 'hideOnContentClick' : true });
+});
+
+$(document).ready(function() {
+	$(".fancybox").fancybox({
+		openEffect	: 'none',
+		closeEffect	: 'none'
+	});
+});
+</script>
+{/literal}

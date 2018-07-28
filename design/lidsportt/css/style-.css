@@ -1,0 +1,1161 @@
+@import url("reset.css");
+
+@charset "utf-8";
+/* CSS Document */
+@charset "ISO-8859-1";
+/* CSS Document */
+
+html {
+  -webkit-text-size-adjust: none;
+}
+
+
+.korrektur{
+	color:#C0C;
+	}
+
+.clear {
+	clear:both;
+	width:100px;}
+
+body {
+	font-size: smaller;
+	font-family: 'PT Sans',Trebuchet MS, Arial, sans-serif; 
+	background-image:url(../images/bgall.jpg);
+	background-position:center;
+	background-color:#e3e3e3;
+	background-repeat: repeat-y;
+	color:#666;
+	padding:0;
+	margin:0;
+	height:100%;
+	line-height:17px;
+	}
+
+.tel	{position:absolute;right:10px;top:30px;font-size:13px;text-align:right;}
+.tel strong	{font-size:20px;}
+
+#text img.inhalt {
+max-width: 250px ;
+max-height:400px;
+height:auto;
+float:left;
+margin: -100px 0 10px 500px ;
+border:1px solid #ccc;
+text-align:right;
+}
+
+hr{ border-top:dotted 1pt #999;
+border-left:none;
+color:#ccc;
+height:1px;
+width:750px;
+text-align:left;}
+	
+
+*+html #div { /*IE7 only*/
+
+}
+
+
+
+select{
+	border: 1px solid #ccc;}
+
+
+.historiewrapper{
+	width:700px;
+	border-bottom:1pt dotted #999;
+
+	padding:20px 0 ;
+	margin-left:-8px;
+	overflow: hidden;
+	}
+
+.historiebild{
+	float:left;
+	width:auto;
+	padding-right:20px;
+	margin-right:20px;
+		width: 250px;
+	}
+
+.historietext{
+	float:left;
+	width:300px;
+	margin-right:10px;
+	
+	}
+	
+.historietext a{
+	color:#0099cC;
+	
+	}	
+a{
+	color:#0099cC;
+	}
+a:hover{
+	color:#ccC;
+	}	
+
+a:visited{
+	color:#f88105;
+	}
+	
+.sisea-result a {
+	color:#0099cC;
+	}	
+	
+.sisea-page a {
+	color:#0099cC;
+	}	
+	
+.zubehoerwrapper{
+	width:636px;
+	
+
+	padding:0px 0 10px 0 ;
+	margin-left:-8px;
+	height:auto;
+	
+	}	
+		
+.zubehoertext{
+	float:left;
+	width:350px;
+	margin-right:10px;
+	padding-left:15px;
+	min-height:100px;
+	
+	}	
+
+.inhaltwrapper{
+
+		border-bottom:1pt dotted #999;
+	width:780px;
+	margin-left:-8px;
+padding:20px 0 20px 0 ;
+overflow: hidden;
+
+	}
+	
+
+
+
+.inhaltbild{
+
+	float:left;
+	width:200px;
+	margin-top:30px;
+	border: 1px solid #ccc;
+	
+	}		
+
+.inhalttext{
+	text-align:justify;
+	float:left;
+	/*width:400px;*/
+	margin-right:60px;
+	padding-left:15px;
+	
+	}	
+	
+.inhalttext p	{padding-bottom:10px;text-align:justify;}
+
+.mitarbeiterbox {
+	margin-left:11px;
+	padding:10px 0  14px 0px;
+	width:240px;
+	float:left;
+	margin-top:0;
+	}	
+
+/*Startseite*/
+
+.newsbox-wrapper {
+	width:846px;
+	margin-left:-50px;
+	padding:0;
+	}
+
+.newsbox {
+	margin-left:27px;
+	padding:0 0  17px 0px;
+	width:245px;
+	float:left;
+	margin-top:0;
+	}
+	
+
+	
+.newsbox a {
+	text-decoration:none;
+	color:#666;
+
+	}
+.newsbox h2{
+	margin-bottom:-14px;
+	}	
+	
+	
+
+h1 { 
+background-image:url(../images/headbg-profilier.png);
+width:760px;
+line-height:22px;
+background-repeat:repeat-y;
+padding:4px 00px 4px 14px;
+color:#fff;
+text-transform:uppercase;
+letter-spacing:2px;
+margin-left:-9px;
+font-size:1.2em;
+margin-top:-18px;
+background-position: 0 90px ;
+
+
+}
+
+
+h5 { 
+background-image:url(../images/headbg-motorschwenk.png);
+width:760px;
+line-height:22px;
+background-repeat:repeat-y;
+padding:4px 00px 4px 14px;
+color:#fff;
+text-transform:uppercase;
+letter-spacing:2px;
+margin-left:-9px;
+font-size:1.2em;
+margin-top:-18px;
+background-position: 0 90px ;
+
+
+}
+
+
+h4 {
+	font-size:0.9em;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	color:#f08000;
+	font-weight:bold;
+	margin-top:10px;
+	margin-bottom:8px;
+	
+	}
+
+
+h2 {
+	font-size:1.2em;
+	text-transform:uppercase;
+	letter-spacing:2px;
+	color:#f08000;
+	font-weight:bold;
+	margin-top:10px;
+	margin-bottom:8px;
+	
+	}
+	
+h1.kat7, h1.kat65, h1.kat82 { 
+background-image:url(../images/headbg-profilier.png);
+background-position: 0 90px ;
+}
+
+h1.kat21, h1.kat73 { 
+background-image:url(../images/headbg-handschwenk.png);
+background-position: 0 90px ;
+}	
+	
+h1.kat8, h1.kat66, h1.kat74, h1.kat76, h1.kat69, h1.kat83 { 
+background-image:url(../images/headbg-motorschwenk.png);
+background-position: 0 90px ;
+}
+
+h1.kat20, h1.kat71, h1.kat77, h1.kat78, h1.kat79, h1.kat85 { 
+background-image:url(../images/headbg-motortafel.png);
+background-position: 0 90px ;
+}
+
+
+h1.kat19, h1.kat70, h1.kat84 { 
+background-image:url(../images/headbg-handtafel.png);
+background-position: 0 90px ;
+}
+h1.kat400, h1.kat72 { 
+background-image:url(../images/headbg-anlagen.png);
+background-position: 0 90px ;
+}	
+	
+	
+h5.kat8 { 
+background-image:url(../images/headbg-motorschwenk.png);
+background-position: 0 90px ;
+}
+
+h5.kat20 { 
+background-image:url(../images/headbg-motortafel.png);
+background-position: 0 90px ;
+}
+
+h5.kat7, h5.kat82 { 
+background-image:url(../images/headbg-profilier.png);
+background-position: 0 90px ;
+}
+
+h5.kat21 { 
+background-image:url(../images/headbg-handschwenk.png);
+background-position: 0 90px ;
+}
+h5.kat19 { 
+background-image:url(../images/headbg-handtafel.png);
+background-position: 0 90px ;
+}
+h5.kat400 { 
+background-image:url(../images/headbg-anlagen.png);
+background-position: 0 90px ;
+}
+	
+
+/*breadcrumbs*/
+	
+	#breadcrumb {
+
+padding:0;
+	text-align:right;
+	color:#999;
+	height:10px;
+
+	}
+	
+	.B_crumbBox{
+	color:#999;
+	text-decoration:none;
+	font-size:0.7em;
+	padding-left: 6px;
+	padding-right:6px;
+	
+	}	
+#breadcrumb a:hover  {
+		color:#000;}
+		
+
+		
+#breadcrumb a {
+		color:#999;
+	text-decoration:none;}	
+	
+	
+	
+	/*produktseite*/
+.produktbild{
+	padding:20px 0px 27px 0px;
+	
+	}	
+
+#produkthead20, #produkthead71, #produkthead77, #produkthead78, #produkthead79, #produkthead85 {
+	background-image:url(../images/headbg-motortafel.png);
+	background-repeat:no-repeat;
+	height:200px;
+	width:774px;
+	margin-left:-9px;
+
+	margin-top:-6px;
+	}
+#produkthead8, #produkthead66, #produkthead74, #produkthead76, #produkthead69, #produkthead83 {
+	background-image:url(../images/headbg-motorschwenk.png);
+	background-repeat:no-repeat;
+	height:200px;
+	width:774px;
+	margin-left:-9px;
+	
+	margin-top:-6px;
+	}
+	
+#produkthead7, #produkthead65, #produkthead82 {
+	background-image:url(../images/headbg-profilier.png);
+	background-repeat:no-repeat;
+	height:200px;
+	width:774px;
+	margin-left:-9px;
+
+	margin-top:-6px;
+	}
+	
+#produkthead19, #produkthead20, #produkthead70, #produkthead84 {
+	background-image:url(../images/headbg-handtafel.png);
+	background-repeat:no-repeat;
+	height:200px;
+	width:774px;
+	margin-left:-9px;
+
+	margin-top:-6px;
+	}
+	
+#produkthead21, #produkthead73 {
+	background-image:url(../images/headbg-handschwenk.png);
+	background-repeat:no-repeat;
+	height:200px;
+		width:774px;
+	margin-left:-9px;
+
+	margin-top:-6px;
+	}
+	
+#produkthead400, #produkthead72 {
+	background-image:url(../images/headbg-anlagen.png);
+	background-repeat:no-repeat;
+	height:200px;
+	width:774px;
+	margin-left:-9px;
+
+	margin-top:-6px;
+	}	
+	
+.micro	{
+	height:55px;
+	vertical-align:bottom;
+	width:150px;
+position: relative;
+
+}
+.unt{
+	color: #0099CC;
+    font-size: 8px;
+    font-weight: bold;
+    
+    letter-spacing: 0;
+    line-height: 11px;
+    padding: 0 0 2px 15px;
+	
+	position: absolute;
+	bottom: 0;}
+
+p.prodmicro{
+	font-size:8px;
+	color:#0099cc;
+padding:0px 0px 0 15px;
+float:left;   
+	font-weight:bold;
+	letter-spacing:0px;
+line-height:0px;
+height:11px;
+
+	}	
+
+p.strgmicro{
+	font-size:8px;
+	color: #6CF;
+	padding:0px 0 0 2px;
+	float:left;
+	font-weight:bold;
+	line-height:0px;
+	width:100px;
+	height:11px;
+
+	}
+
+
+
+
+
+span.prod{
+	font-size:40px;
+	color:#FFF;
+padding:20px 50px 0 20px;
+float:left;
+	font-weight:bold;
+	letter-spacing:2px;
+line-height:60px;
+	
+	}
+	
+	
+	
+	
+span.strg7{
+	letter-spacing:2px;
+	font-size:80px;
+	color:#edfaff;
+	padding:20px 0 0 0px;
+	float:left;
+	font-weight:bold;
+	line-height:60px;
+	}
+
+span.strg8{
+	letter-spacing:2px;
+	font-size:80px;
+	color:#d8f5fe;
+	padding:20px 0 0 0px;
+	float:left;
+	font-weight:bold;
+	line-height:60px;
+	}
+span.strg19{
+	letter-spacing:2px;
+	font-size:80px;
+	color:#f1feca;
+	padding:20px 0 0 0px;
+	float:left;
+	font-weight:bold;
+	line-height:60px;
+	}
+span.strg20{
+	letter-spacing:2px;
+	font-size:80px;
+	color:#caf0b7;
+	padding:20px 0 0 0px;
+	float:left;
+	font-weight:bold;
+	line-height:60px;
+	}	
+span.strg21{
+	letter-spacing:2px;
+	font-size:80px;
+	color:#ffefda;
+	padding:20px 0 0 0px;
+	float:left;
+	font-weight:bold;
+	line-height:60px;
+	}	
+	
+	
+	
+	
+a.prodmini{
+	font-size:16px;
+	color:#FFF;
+padding:2px 20px 0 20px;
+	/*font-weight:bold;
+	letter-spacing:2px;*/
+	text-decoration:none;
+	display:block;
+	height:30px;
+	}	
+	
+span.prodmini{
+	font-size:27px;
+	color:#FFF;
+padding:2px 10px 0 20px;
+float:left;
+	font-weight:bold;
+	letter-spacing:2px;
+	text-decoration:none;
+	
+	}
+span.prodmini a{
+text-decoration:none;
+	
+	}	
+
+
+a.strgmini{
+	letter-spacing:1px;
+	font-size:25px;
+	color:#fff;
+	padding:2px 0 0 3px;
+margin-left:-7px;
+	font-weight:bold;
+	text-decoration:none;
+	}
+
+span.strgmini8{
+	letter-spacing:1px;
+	font-size:25px;
+	color:#a0daee;
+	padding:2px 0 0 03px;
+	float:left;
+	font-weight:bold;
+	text-decoration:none;
+	}
+	
+a.strgmini8{
+	letter-spacing:1px;
+	font-size:25px;
+	color:#a0daee;
+	padding:2px 0 0 3px;
+margin-left:-5px;
+	font-weight:bold;
+	text-decoration:none;
+	text-shadow: 1px 1px #3399cc;
+	}
+	
+	
+span.strgmini7{
+	letter-spacing:2px;
+	font-size:25px;
+	color:#edfaff;
+	padding:2px 0 0 0px;
+	float:left;
+	font-weight:bold;
+	text-decoration:none;
+	}
+	
+a.strgmini7{
+	letter-spacing:2px;
+	font-size:25px;
+	color:#edfaff;
+	padding:2px 0 0 0px;
+margin-left:-7px;
+	font-weight:bold;
+	text-decoration:none;
+	}	
+
+span.strgmini19{
+	letter-spacing:2px;
+	font-size:25px;
+	color:#f1feca;
+	padding:2px 0 0 0px;
+	float:left;
+	font-weight:bold;
+	text-decoration:none;
+	}
+a.strgmini19{
+	letter-spacing:2px;
+	font-size:25px;
+	color:#f1feca;
+	padding:2px 0 0 0px;
+margin-left:-7px;
+	font-weight:bold;
+	text-decoration:none;
+	}	
+	
+span.strgmini20{
+	letter-spacing:2px;
+	font-size:25px;
+	color:#caf0b7;
+	padding:2px 0 0 0px;
+	float:left;
+	font-weight:bold;
+	text-decoration:none;
+	}
+	
+a.strgmini20{
+	letter-spacing:2px;
+	font-size:25px;
+	color:#caf0b7;
+	padding:2px 0 0 0px;
+margin-left:-7px;	
+	font-weight:bold;
+	text-decoration:none;
+	}	
+span.strgmini21{
+	letter-spacing:2px;
+	font-size:25px;
+	color:#ffefda;
+	padding:2px 0 0 0px;
+	float:left;
+	font-weight:bold;
+	text-decoration:none;
+	
+	}	
+	
+a.strgmini21{
+	letter-spacing:2px;
+	font-size:25px;
+	color:#ffefda;
+	padding:2px 0 0 0px;
+margin-left:-7px;
+	font-weight:bold;
+	text-decoration:none;
+	
+	}		
+		
+.produktmini{
+padding-left:74px;	
+margin-top:-70px;
+}	
+	
+.produktvergleichbild{
+padding-left:74px;	
+margin-top:-55px;
+
+	
+	}			
+	
+	
+	
+	
+table.uebersicht19, .inhaltwrapper20 table {
+margin-top:30px;
+font-family: 'PT Sans',Trebuchet MS, Arial, sans-serif; 
+}
+table.uebersicht19 td, .inhaltwrapper20 table td {
+	padding:2px 2px 2px 14px;
+	}
+table.uebersicht19 thead td, .inhaltwrapper20 thead td {
+	color:#fff;
+	font-weight:bold;
+padding:4px 4px 4px 14px;
+height:15px;
+background-image:url(../images/headbg-handtafel.png);
+	}
+
+	
+table.uebersicht8, .inhaltwrapper66 table {
+margin-top:30px;font-family: 'PT Sans',Trebuchet MS, Arial, sans-serif; 
+}
+table.uebersicht8 td, .inhaltwrapper66 table td {padding:2px 2px 2px 14px;
+	}
+table.uebersicht8 thead td, .inhaltwrapper66 thead td {
+	color:#fff;
+	font-weight:bold;
+padding:4px 4px 4px 14px;
+height:15px;
+background-image:url(../images/headbg-motorschwenk.png);
+	}
+	
+	.inhaltwrapper table tr:nth-child(2n-1) {
+ 	 background: #EAEAEA;
+   } 
+   .inhaltwrapper table tr:nth-child(1) {
+    /* background: #EAEAEA; */
+   } 
+	
+	table.uebersicht7, .inhaltwrapper65 table {
+margin-top:30px;font-family: 'PT Sans',Trebuchet MS, Arial, sans-serif; 
+width:450px !important;
+}
+table.uebersicht7 td, .inhaltwrapper65 table td {padding:2px 2px 2px 14px;
+	}
+table.uebersicht7 thead td, .inhaltwrapper65 thead td {
+	color:#fff;
+	font-weight:bold;
+padding:4px 4px 4px 14px;
+height:15px;
+background-image:url(../images/headbg-handschwenk.png);
+	}
+	
+
+	
+	
+table.uebersicht20, .inhaltwrapper71 table {
+margin-top:30px;font-family: 'PT Sans',Trebuchet MS, Arial, sans-serif; 
+}
+table.uebersicht20 td, .inhaltwrapper71 table td {padding:2px 2px 2px 14px;
+	}
+table.uebersicht20 thead td, .inhaltwrapper71 thead td {
+	color:#fff;
+	font-weight:bold;
+padding:4px 4px 4px 14px;
+height:15px;
+background-image:url(../images/headbg-motortafel.png);
+	}	
+	
+	
+table.uebersicht21, .inhaltwrapper73 table {
+margin-top:30px;font-family: 'PT Sans',Trebuchet MS, Arial, sans-serif; 
+}
+table.uebersicht21 td, .inhaltwrapper73 table td {padding:2px 2px 2px 14px;
+	}
+table.uebersicht21 thead td, .inhaltwrapper73 thead td {
+	color:#fff;
+	font-weight:bold;
+padding:4px 4px 4px 14px;
+height:15px;
+background-image:url(../images/headbg-profilier.png);
+	}	
+	
+	
+table.uebersicht400, .inhaltwrapper72 table {
+margin-top:30px;font-family: 'PT Sans',Trebuchet MS, Arial, sans-serif; 
+}
+table.uebersicht400 td, .inhaltwrapper72 table td {padding:2px 2px 2px 14px;
+	}
+table.uebersicht400 thead td, .inhaltwrapper72 thead td {
+	color:#fff;
+	font-weight:bold;
+padding:4px 4px 4px 14px;
+height:15px;
+background-image:url(../images/headbg-anlagen.png);
+	}		
+
+#wrapper{
+	margin:0 auto;
+	width:940px;}
+
+
+#container {
+	width:1000px;
+	height:100%;
+	padding:0px;
+	margin:0px auto;
+	
+	}
+	
+	
+#logo {
+	width: 990px;
+	height: 110px;
+	position:relative;
+	
+	}
+	
+.logobild{
+	background-image:url(../images/logo.jpg);
+
+background-repeat:no-repeat;
+background-position: top left;
+ width:482px;
+ height:95px; 
+	}
+	
+	
+	
+*+html .logobild{ /*IE7 only*/
+	background-image:url(../images/logo.jpg);
+background-repeat:no-repeat;
+background-position: top left;
+ width:482px;
+ height:95px; 
+	}	
+	
+#bild {
+	width:240px;
+	font-size:0.9em;
+	float:right;
+	padding:100px 0 0 0;
+	}	
+	
+.right{
+	
+	}	
+	
+	
+.accordiontext {
+	width:380px;
+	
+	}	
+	
+	
+	
+#text img.accordionbild {
+
+	max-width: 250px ;
+max-height:400px;
+height:auto;
+float:left;
+margin: 0px 0 10px 400px ;
+border:1px solid #ccc;
+text-align:right;
+	
+	}		
+.newsdate{
+	border-bottom:dotted 1pt #999;
+	width:700px;
+	font-size:1.1em;
+	padding-top:30px;
+	
+	}	
+	
+	
+	
+#naviwrapper {
+	width: 987px;
+	
+margin-top:0;
+
+	}	
+	
+
+	
+#content {
+
+line-height: 18px;
+		font-size:10pt;
+	width: 780px;
+	float:right;
+	margin-top:0px;
+	background-image:url(../images/fonama.jpg);
+	background-repeat:no-repeat;
+	background-position:top;
+	min-height:400px;
+	padding:27px 0px 27px 27px;
+	
+	}	
+	
+	
+
+	
+		
+div.vorteile	{margin-left:20px;}
+ul.vorteile, div.vorteile ul{
+	list-style:none;
+	font-size:0.9em;
+	line-height:1.2em;
+	
+	margin: 6px 0 0 0;
+	}
+	
+	
+	
+	
+*+html ul.vorteile { /*IE7 only*/
+list-style:none;
+	font-size:0.9em;
+	line-height:1.2em;
+	margin-top:-5px;
+
+}
+	
+li.vorteil, div.vorteile ul li{
+	height:auto;
+	background-image: url(../images/dot.png);
+	background-repeat:no-repeat;
+	padding-left:14px;
+	width: 210px;
+	font-size:11px;
+	background-position:top left;
+	
+
+
+}
+
+
+
+.kompakt8, .kompakt66, .kompakt74, .kompakt76, .kompakt69, .kompakt83 {
+	width:261px;
+	height:200px;
+	background-image:url(../images/bg-kompakt-motorschwenk.png);
+	float:left;
+	margin-left:-17px;
+	margin-right:16px;
+	position:relative;
+	
+	}
+	
+.kompakt7, .kompakt65, .kompakt82 {
+	width:261px;
+	height:200px;
+	margin-bottom:20px;
+	background-image:url(../images/bg-kompakt-profilier.png);
+	float:left;
+	margin-left:-17px;
+	margin-right:16px;
+		position:relative;
+		}	
+	
+.kompakt19, .kompakt70, .kompakt84 {
+	width:261px;
+	height:200px;
+	background-image:url(../images/bg-kompakt-handtafel.png);
+	float:left;
+	margin-left:-17px;
+	margin-right:16px;
+		position:relative;
+	}	
+	
+.kompakt20, .kompakt71, .kompakt77, .kompakt78, .kompakt79, .kompakt85 {
+	width:261px;
+	height:200px;
+	background-image:url(../images/bg-kompakt-motortafel.png);
+	float:left;
+	margin-left:-17px;
+	margin-right:16px;
+		position:relative;
+	}	
+	
+	
+.kompakt21, .kompakt73 {
+	width:261px;
+	height:200px;
+	background-image:url(../images/bg-kompakt-handschwenk.png);
+	float:left;
+	margin-left:-17px;
+	margin-right:16px;
+		position:relative;
+	}	
+	
+	.kompakt400, .kompakt72 {
+	width:261px;
+	height:200px;
+	background-image:url(../images/bg-kompakt-anlagen.png);
+	float:left;
+	margin-left:-17px;
+	margin-right:16px;
+		position:relative;
+	}	
+	
+
+input {
+  background-color : #fff;
+  border:1px solid #ccc;
+} 
+
+
+#footerwrapper a{
+	text-decoration:none;
+	color:#999;
+	}
+	
+#footerwrapper a:hover{
+	text-decoration:none;
+	color:#0099cc;
+	}
+	
+#footerwrapper{
+	width: 800px;
+	height: 30px;
+	padding:10px 0px 0 0px;
+border-top:1pt dotted #999;
+margin-left:185px;
+	font-size:0.8em;
+	background-color:#FFF;
+	text-decoration:none;
+	color:#999;
+
+	}
+	
+	#footerleft{
+	width: 350px;
+	height: 20px;
+	float:left;
+
+	}
+	#footerright{
+	width: 600px;
+	height: 20px;
+	float:right;
+	text-align:right;
+
+	}
+
+form.sisea-search-form{
+float:right;
+	}
+	
+	
+/* Formular */	
+	
+	label {
+    width: 8em;
+    display: block;
+    float: left;
+}
+
+.error{
+	font-size:7pt;
+	color:#600;
+	width:400px;}
+
+form{
+	line-height:8px; }
+	
+	
+.vergleichbutton{
+	background-image:url(../images/vergleich-bg.png);
+	padding-left: 10px;
+	width: 120px;
+margin-left:20px;
+	border-radius: 5px  5px 5px 5px;
+	-moz-border-radius: 5px  5px 5px 5px;
+	-webkit-border-radius:  5px  5px 5px 5px;
+
+	position: absolute;
+	bottom: 21px;
+	}
+.vergleichbutton a {
+	color:#0099cC;
+	font-weight:bold;
+	text-decoration:none;
+	text-align:center;
+	padding-right:3px 20px 3px 3px;
+	
+	}	
+	
+.vergleichbutton a:hover {
+	color:#666;
+	
+	}		
+	
+	
+.vergleichbutton2{
+	background-image:url(../images/vergleich-bg.png);
+	padding-left: 10px;
+	width: 100px;
+	margin-left:20px;
+		border-radius: 5px  5px 5px 5px;
+	-moz-border-radius: 5px  5px 5px 5px;
+	-webkit-border-radius:  5px  5px 5px 5px;
+	margin-top:6px;
+
+	}
+.vergleichbutton2 a {
+	color:#0099cC;
+	font-weight:bold;
+	text-decoration:none;
+	text-align:center;
+	
+	}		.vergleichbutton2 a:hover {
+	color:#666;
+	
+	}	
+	
+.inhalttext ul{
+
+	list-style-image: url(../images/dot.png);
+	
+	}	
+.inhalttext li{
+
+	margin-left:17px;
+	margin-bottom:4px;
+	
+	}		
+.pdf {
+	background-image: url(../images/pdf2.png);
+	padding: 10px 0 10px 30px;
+	background-repeat:no-repeat;
+	background-position:left;
+
+	line-height: 30px;}	
+	
+	.albom_img a	{display:inline-block;margin:4px;width:180px;height:180px;line-height:180px;vertical-align:middle;text-align:center;}
+	.albom_img a img{max-height:180px;max-width:180px;line-height:180px;vertical-align:middle;}
+	
+	
+.inhalttext table	{width: 100%;}
+.inhalttext table th,
+.inhalttext table td {
+  padding: 8px;
+  line-height: 20px;
+  text-align: left;
+  vertical-align: top;
+  border-top: 1px solid #dddddd;
+}
+
+.inhalttext table td p	{margin:0;text-align:center;padding:0;}
+
+.inhalttext table th {
+  font-weight: bold;
+}
+
+.inhalttext table thead th {
+  vertical-align: bottom;
+}
+
+.inhalttext table caption + thead tr:first-child th,
+.inhalttext table caption + thead tr:first-child td,
+.inhalttext table colgroup + thead tr:first-child th,
+.inhalttext table colgroup + thead tr:first-child td,
+.inhalttext table thead:first-child tr:first-child th,
+.inhalttext table thead:first-child tr:first-child td {
+  border-top: 0;
+}
+
+.inhalttext table tbody + tbody {
+  border-top: 2px solid #dddddd;
+}
+
+.inhalttext table .inhalttext table {
+  background-color: #ffffff;
+}
+
+
+.inhalttext table-hover tbody tr:hover > td,
+.inhalttext table-hover tbody tr:hover > th {
+  background-color: #f5f5f5;
+}
+

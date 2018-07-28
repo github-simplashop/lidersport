@@ -1,0 +1,46 @@
+img{
+	border:none;
+}145
+.enter a{
+	margin: 0 10px 0 20px;
+}
+/*.ul_type{
+	width: 604px;
+}*/
+.special_offer{
+	line-height:35px;
+}
+.ul_bottom_menu{
+	width: 460px;
+}
+.category_li{
+	left:238px;
+}
+.trable1{
+	border-bottom:0px;
+}
+.trable1:hover{
+	border-bottom:0px;
+}
+.search_btn{
+	cursor:pointer;
+}
+.fade.modal{
+	top:-150%;
+}
+.more_btn{
+	border-bottom:0px;
+}
+.more_btn:hover{
+	border-bottom:0px;
+}
+.razn li{
+	margin-left:190px;
+}
+.data li{
+	margin-left:4px;
+}
+.chec1{
+	height:13px !important;
+	margin-top:17px !important
+}

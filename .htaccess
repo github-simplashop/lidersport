@@ -1,0 +1,237 @@
+AddDefaultCharset UTF-8
+ErrorDocument 404 /404
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+RewriteEngine On
+RewriteCond %{SERVER_PORT} ^80$ [OR]
+RewriteCond %{HTTP} =on
+RewriteRule ^(.*)$ https://lidsport.ru/$1 [R=301,L]
+
+#RewriteRule index.html / [L,R=301]
+#RewriteRule index.htm / [L,R=301]
+
+# RewriteRule ^madmin/(.*)$ madmin/$1 [L]
+
+# Редирект старых категорий
+
+RewriteRule ^roliki-skejty-samokaty-giroskutery/?$ /aktivnyj-otdyh  [L,R=301]
+RewriteRule ^roliki-skejty-samokaty/?$ /aktivnyj-otdyh  [L,R=301]
+RewriteRule ^hiro/?$ /giroskutery  [L,R=301]
+RewriteRule ^bassejny-i-aksessuary/?$ /bassejny-plyazh-aksessuary  [L,R=301]
+RewriteRule ^akssesuary-dlya-bassejnov/?$ /himiya-i-akssesuary-dlya-bassejnov  [L,R=301]
+RewriteRule ^himiya-dlya-bassejnov/?$ /himiya-i-akssesuary-dlya-bassejnov  [L,R=301]
+RewriteRule ^aksessuary-dlya-velosipedov/?$ /veloakssesuary  [L,R=301]
+RewriteRule ^detskie-2_h-i-4_h-kolesnye/?$ /2_h-i-4_h-kolesnye  [L,R=301]
+RewriteRule ^detskie/?$ /detskie-i-podrostkovye  [L,R=301]
+RewriteRule ^detskie-3_h-kolesnye/?$ /3_h-kolesnye  [L,R=301]
+RewriteRule ^detskie-trenazhery/?$ /bibikary  [L,R=301]
+RewriteRule ^gimnastika-tantsy/?$ /gimnastika-i-tantsy  [L,R=301]
+RewriteRule ^inventar/?$ /inventar-dlya-gimnastiki  [L,R=301]
+RewriteRule ^obuv/?$ /obuv-dlya-gimnastiki-i-tantsev  [L,R=301]
+RewriteRule ^kupalniki-yubki/?$ /odezhda-dlya-gimnastiki  [L,R=301]
+RewriteRule ^shorty-majki-futbolki/?$ /odezhda-dlya-gimnastiki  [L,R=301]
+RewriteRule ^getry-kolgotki/?$ /getry-i-kolgotki  [L,R=301]
+RewriteRule ^losiny-polulosiny/?$ /losiny-i-polulosiny  [L,R=301]
+RewriteRule ^perchatki-lapy-makivary/?$ /edinoborstva  [L,R=301]
+RewriteRule ^perchatki-nakladki-na-ruki/?$ /perchatki-i-nakladki-na-ruki  [L,R=301]
+RewriteRule ^zaschitnoe-snaryazhenie/?$ /snaryazhenie  [L,R=301]
+RewriteRule ^meshki-i-maty-boxer/?$ /snaryazhenie  [L,R=301]
+RewriteRule ^meshki-grushi-germany/?$ /meshki-i-grushi  [L,R=301]
+RewriteRule ^hokkej/?$ /zimnie-tovary  [L,R=301]
+RewriteRule ^elki-i-bengalskie-ogni/?$ /zimnie-tovary  [L,R=301]
+RewriteRule ^zimnij-inventar/?$ /zimnie-tovary  [L,R=301]
+RewriteRule ^oborudovanie-dlya-sportzalov/?$ /dlya-sportivnyh-zalov  [L,R=301]
+RewriteRule ^odezhda-dlya-plavaniya/?$ /kupalniki-dlya-plavaniya  [L,R=301]
+RewriteRule ^basketbol-volejbol-futbol(.*)/?$ /sportivnye-igry  [L,R=301]
+RewriteRule ^setki-i-koltsa-konusy/?$ /sportivnye-igry  [L,R=301]
+RewriteRule ^igry/?$ /sportivnye-igry  [L,R=301]
+RewriteRule ^aerohokkei-i-nastolnye-igry/?$ /aktivnye-igry  [L,R=301]
+RewriteRule ^badminton-bolshoj-tennis/?$ /badminton-i-bolshoj-tennis  [L,R=301]
+RewriteRule ^zaschita-volejbol/?$ /zaschita-volejbolnaya  [L,R=301]
+RewriteRule ^myachi-volejbol/?$ /myachi-volejbolnye  [L,R=301]
+RewriteRule ^myachi-gandbolnye/?$ /gandbol  [L,R=301]
+RewriteRule ^aksessuary-dlya-nastolnogo-tennisa/?$ /nastolnyj-tennis  [L,R=301]
+RewriteRule ^myachi/?$ /myachi-dlya-nastolnogo-tennisa  [L,R=301]
+RewriteRule ^butsy-i-kedy/?$ /butsy  [L,R=301]
+RewriteRule ^perchatki-vratarskie-i-schitki/?$ /zaschita-dlya-futbola  [L,R=301]
+RewriteRule ^zaschita/?$ /zaschita-dlya-futbola  [L,R=301]
+RewriteRule ^forma-getry-manishki-i-pr/?$ /forma-futbolnaya  [L,R=301]
+RewriteRule ^forma/?$ /forma-futbolnaya  [L,R=301]
+RewriteRule ^dsk-batuty-vse-dlya-detej/?$ /sportivnye-kompleksy-i-batuty  [L,R=301]
+RewriteRule ^sportivnye-kompleksy-batuty/?$ /sportivnye-kompleksy-i-batuty  [L,R=301]
+RewriteRule ^dsk-i-aksessuary/?$ /akssesuary-k-detskim-kompleksam  [L,R=301]
+RewriteRule ^maty-kovriki/?$ /maty-gimnasticheskie  [L,R=301]
+RewriteRule ^detskie-sportivnye-kompleksy/?$ /sportivnye-kompleksy  [L,R=301]
+RewriteRule ^gorki-i-ulichnye-dsk/?$ /dlya-ulitsy  [L,R=301]
+RewriteRule ^kubki-i-medali/?$ /suvenirnaya-produktsiya  [L,R=301]
+RewriteRule ^kardio(.*)-begovye/?$ /kardiotrenazhery  [L,R=301]
+RewriteRule ^kardio(.*)-velotrenazhery/?$ /velotrenazhery  [L,R=301]
+RewriteRule ^kardio(.*)-steppery/?$ /steppery  [L,R=301]
+RewriteRule ^kardio(.*)-ellipticheskie/?$ /ellipticheskie  [L,R=301]
+RewriteRule ^silovye/?$ /silovye-trenazhery  [L,R=301]
+RewriteRule ^gamaki-kovriki-i-turisticheskaya-mebel/?$ /gamaki-i-turisticheskaya-mebel  [L,R=301]
+RewriteRule ^krovati-matrasy-kresla/?$ /naduvnaya-produktsiya  [L,R=301]
+RewriteRule ^predmety-dlya-pohudeniya-i-zdorovya/?$ /fitnes-i-atletika  [L,R=301]
+RewriteRule ^atletika/?$ /fitnes-i-atletika  [L,R=301]
+RewriteRule ^massazhery-mehanicheskie/?$ /massazhery  [L,R=301]
+RewriteRule ^perchatki-tyazhelaya-atletika-velo-dlya-fitnesa/?$ /perchatki-dlya-tyazheloj-atletiki-i-dlya-fitnesa  [L,R=301]
+RewriteRule ^sumki/?$ /sumki-i-ryukzaki  [L,R=301]
+RewriteRule ^fitboly/?$ /myachi-dlya-fitnesa  [L,R=301]
+RewriteRule ^medboly/?$ /myachi-dlya-fitnesa  [L,R=301]
+RewriteRule ^obruchi-i-skakalki/?$ /oborudovanie-dlya-fitnesa  [L,R=301]
+RewriteRule ^diski-tvistery-i-roliki-dlya-pressa/?$ /oborudovanie-dlya-fitnesa  [L,R=301]
+RewriteRule ^kovriki_karimaty_maty/?$ /kovriki-karimaty-i-maty-dlya-fitnesa  [L,R=301]
+RewriteRule ^bodibary_step_platformy/?$ /stepplatformy-bodibary-i-tvistery  [L,R=301]
+RewriteRule ^sportivnaya-odezhda/?$ /odezhda  [L,R=301]
+RewriteRule ^turniki-i-upory-dlya-otzhimanij/?$ /silovoj-trening  [L,R=301]
+RewriteRule ^bandazhi-supporty-nakolenniki-povyazki/?$ /fiksatsiya  [L,R=301]
+RewriteRule ^merida/?$ /brands/Merida  [L,R=301]
+RewriteRule ^forward/?$ /brands/Forward  [L,R=301]
+RewriteRule ^cube/?$ /brands/Cube  [L,R=301]
+RewriteRule ^forwardvelo/?$ /brands/Forward  [L,R=301]
+RewriteRule ^elki/?$ /elki-iskusstvennye  [L,R=301]
+
+
+# Tags
+RewriteRule ^tags/?$    index.php?module=TagsView  [L,QSA]
+RewriteRule ^tags/([^/]+)/?$    index.php?module=TagsView&keyword=$1  [L,QSA]
+RewriteRule ^products/tags/([^/]+)/?$    index.php?module=TagsView&type=product&keyword=$1  [L,QSA]
+RewriteRule ^products/([^/]+)/tags/([^/]+)/?$    index.php?module=TagsView&type=product&category=$1&keyword=$2  [L,QSA]
+
+# Каталог товаров
+
+# RewriteRule ^catalog/([^/]+)/?$	index.php?module=ProductsView&category=$1 [L,QSA]
+RewriteRule ^catalog/([^/]+)/([^/]+)/?$	index.php?module=ProductsView&category=$1&brand=$2 [L,QSA]
+
+RewriteRule ^products/([^/]+)/?$	index.php?module=ProductView&product_url=$1 [L,QSA]
+RewriteRule ^products/?$	index.php?module=ProductsView [L,QSA]
+
+RewriteRule ^brands/([^/]+)/?$	index.php?module=ProductsView&brand=$1 [L,QSA]
+RewriteRule ^brands/([^/]+)/page_([^/]+)/?$	index.php?module=ProductsView&brand=$1&page=$2 [L,QSA]
+
+# Поиск товаров
+RewriteRule ^search/([^/]+)/?$	index.php?module=ProductsView&keyword=$1 [L,QSA]
+RewriteRule ^search/?$	index.php?module=ProductsView [L,QSA]
+
+# Блог
+RewriteRule ^stock/([^/]+)/?$	index.php?module=BlogView&url=$1 [L,QSA]
+RewriteRule ^stock/?$	index.php?module=BlogView [L,QSA]
+
+RewriteRule ^news/([^/]+)/?$	index.php?module=NewsView&url=$1&news=1 [L,QSA]
+RewriteRule ^news/?$	index.php?module=NewsView&news=1 [L,QSA]
+
+
+# Корзина и заказы
+RewriteRule ^cart/?$	index.php?module=CartView   [L,QSA]
+RewriteRule ^cart/([^/]+)/?$	index.php?module=CartView&add_variant=$1  [L,QSA]
+RewriteRule ^cart/remove/([^/]+)/?$	index.php?module=CartView&delete_variant=$1  [L,QSA]
+RewriteRule ^order/([^/]+)/?$	index.php?module=OrderView&url=$1  [L,QSA]
+RewriteRule ^order/?$	index.php?module=OrderView  [L,QSA]
+
+# Для пользователей
+RewriteRule ^user/login/?$	index.php?module=LoginView  [L,QSA]
+RewriteRule ^user/register/?$	index.php?module=RegisterView  [L,QSA]
+RewriteRule ^user/logout/?$	index.php?module=LoginView&action=logout  [L,QSA]
+RewriteRule ^user/password_remind/?$	index.php?module=LoginView&action=password_remind  [L,QSA]
+RewriteRule ^user/password_remind/([0-9a-z]+)/?$	index.php?module=LoginView&action=password_remind&code=$1  [L,QSA]
+RewriteRule ^user/?$	index.php?module=UserView  [L,QSA]
+
+# Google sitemap
+# RewriteRule ^sitemap.xml?$	sitemap.php  [L,QSA]
+
+# XML
+RewriteRule ^yandex.xml?$	yandex.php  [L,QSA]
+
+# feedback
+RewriteRule ^contact/?$	index.php?module=FeedbackView  [L,QSA]
+RewriteRule ^prajs-list/?$	index.php?module=FeedbackView  [L,QSA]
+
+
+#downloads
+RewriteRule ^order/([^/]+)/([^/]+)/?$	index.php?module=OrderView&url=$1&file=$2  [L,QSA]
+
+
+# Ресайз картинок на лету
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^files/products/(.+) resize/resize.php?file=$1&token=%{QUERY_STRING}
+#RewriteCond %{THE_REQUEST} ^GET\ (.*)files/products/(.*)\?([A-z0-9]*) 
+#RewriteRule ^files/products/(.+) resize/resize.php?file=%2&token=%3 [L,NE]
+
+# RewriteRule index.htm / [L,QSA]
+
+RewriteRule ^([^/]*)/u_([^/]*)/?$	index.php?module=PageView&page_url=$1&product=$2 [L,QSA]
+# Статические страницы
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]*)/?	index.php?module=PageView&page_url=$1 [L,QSA]
+
+RewriteRule ^/?$	index.php?module=MainView&page_url= [L,QSA]
+
+
+
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE application/javascript
+
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/xml
+
+#RewriteRule /index.html http://lidsport.ru/index.php?module=PageView&page_url=totem [R=301,L]
+
+# Redirect 301 /index.html /
+
+# Отключение ошибок php
+php_flag display_startup_errors off
+php_flag display_errors off
+php_flag html_errors off
+php_value docref_root 0
+php_value docref_ext 0
+
+# Кэш
+<FilesMatch ".(flv|gif|jpg|jpeg|png|ico|svg |woff|swf|js|css|pdf)$">
+  Header set Cache-Control "max-age=2592000"
+</FilesMatch>
+
+<ifModule mod_expires.c>
+
+# Add correct content-type for fonts
+AddType application/vnd.ms-fontobject .eot
+AddType application/x-font-ttf .ttf
+AddType application/x-font-opentype .otf
+AddType application/x-font-woff .woff
+AddType image/svg+xml .svg
+
+# Compress compressible fonts
+AddOutputFilterByType DEFLATE application/x-font-ttf application/x-font-opentype image/svg+xml
+
+ExpiresActive On
+ExpiresDefault "access plus 5 seconds"
+
+# Cache Images
+ExpiresByType image/x-icon "access plus 2592000 seconds"
+ExpiresByType image/jpeg "access plus 2592000 seconds"
+ExpiresByType image/png "access plus 2592000 seconds"
+ExpiresByType image/gif "access plus 2592000 seconds"
+ExpiresByType image/svg+xml "access plus 2592000 seconds"
+
+# Cache Fonts
+ExpiresByType application/vnd.ms-fontobject "access plus 2592000 seconds"
+ExpiresByType application/x-font-ttf "access plus 2592000 seconds"
+ExpiresByType application/x-font-opentype "access plus 2592000 seconds"
+ExpiresByType application/x-font-woff "access plus 2592000 seconds"
+ExpiresByType image/svg+xml "access plus 2592000 seconds"
+
+# Cache other content types (Flash, CSS, JS, HTML, XML)
+ExpiresByType application/x-shockwave-flash "access plus 2592000 seconds"
+ExpiresByType text/css "access plus 604800 seconds"
+ExpiresByType text/javascript "access plus 2592000 seconds"
+ExpiresByType application/javascript "access plus 2592000 seconds"
+ExpiresByType application/x-javascript "access plus 2592000 seconds"
+ExpiresByType text/html "access plus 600 seconds"
+ExpiresByType application/xhtml+xml "access plus 600 seconds"
+
+</ifModule>

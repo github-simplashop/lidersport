@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+	<name>
+		NetPay
+	</name>
+	<settings>
+		<variable>api_key</variable>
+		<name>Api_key</name>
+	</settings>
+	<settings>
+		<variable>auth_sign</variable>
+		<name>Auth_signature</name>
+	</settings>
+        <settings>
+		<variable>mailforsend</variable>
+		<name>Адрес электронной почты (для оплаты с подтверждением)</name>
+	</settings>
+        <settings>
+		<variable>textinsteadbutton</variable>
+		<name>Текст вместо кнопки (для оплаты с подтверждением)</name>
+	</settings>
+    <settings>
+		<variable>sendmailerror</variable>
+		<name>Текст ошибки отправки почты (для оплаты с подтверждением)</name>
+	</settings>
+	<settings>
+		<variable>test_mode</variable>
+		<name>Тестовый режим</name>
+		<options>
+			<name>Включен</name>
+			<value>1</value>
+		</options>
+	</settings>
+    <settings>
+		<variable>inn</variable>
+		<name>ИНН юр лица (только для онлайн-кассы)</name>
+	</settings>
+	<settings>
+		<variable>tax</variable>
+		<name>Ставка НДС (только для онлайн-кассы) - none, vat0, vat10, vat18, vat110, vat118</name>
+	</settings>
+	
+</module>

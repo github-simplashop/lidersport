@@ -1,0 +1,7 @@
+AuthType Basic
+AuthName "/www/adv26.ru/webstat"
+AuthUserFile /var/www/adv26/data/etc/25942.passwd
+DirectoryIndex index.html
+<Limit GET POST>
+	require valid-user
+</Limit>

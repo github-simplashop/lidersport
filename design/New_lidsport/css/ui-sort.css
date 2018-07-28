@@ -1,0 +1,22 @@
+.sort {
+  display: flex;
+  align-items: center;
+}
+.sort, .sort *, .sort *::before, .sort *::after {
+  box-sizing: border-box;
+}
+.sort__label {
+  margin-right: 15px;
+  white-space: nowrap;
+}
+.sort__select {
+  width: 100%;
+  max-width: 210px;
+  height: 40px;
+  padding: 0 40px 0 20px;
+  font: inherit;
+  border: 1px solid #d2d2d2;
+  border-radius: 4px;
+  appearance: none;
+  background: url(../images/ico/select-arrow.jpg) no-repeat right center;
+}

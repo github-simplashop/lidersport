@@ -1,0 +1,49 @@
+User-agent: *
+
+Disallow: /_notes
+Disallow: /ajax
+Disallow: /api
+Disallow: /captcha
+Disallow: /config
+Disallow: /files
+Disallow: /payment
+Disallow: /php
+Disallow: /price
+Disallow: /resize
+Disallow: /Smarty
+Disallow: /view
+Disallow: /images1c
+Disallow: /madmin
+Disallow: /netpay
+Disallow: /netpay123
+Disallow: /new
+Disallow: /webstat
+Disallow: /cart 
+Disallow: /order 
+Disallow: /sale
+
+Allow: /build
+Allow: /compiled
+Allow: /design
+Allow: /files/uploads/dogovor_1.pdf
+Allow: /files/banners
+Allow: /files/brands
+Allow: /files/catalog
+Allow: /files/products
+Allow: /files/slides
+
+User-agent: GoogleBot
+Disallow: /*?utm_
+Disallow: /*?yclid
+Disallow: /price
+Allow: /design/New_lidsport/js
+Allow: /design/New_lidsport/css
+
+User-agent: Yandex
+Clean-Param: utm_source&utm_medium&utm_campaign&utm_content&utm_term&utm_banner&utm_phrase&type
+Clean-Param: sort&page&keyword
+Clean-Param: yclid
+
+
+Host: https://lidsport.ru 
+Sitemap: https://lidsport.ru/sitemap.xml
