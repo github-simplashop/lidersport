@@ -1,0 +1,9 @@
+compiled/
+madmin/design/compiled/
+files/
+images1c/
+config/config.php
+/dumb.sql.gz
+/changelog.txt
+/package-lock.json
+/**/*.log
