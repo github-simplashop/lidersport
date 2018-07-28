@@ -32,6 +32,7 @@
   <link rel="stylesheet" type="text/css" href="/design/{$settings->theme}/css/component-pagination.css">
   <link rel="stylesheet" type="text/css" href="/design/{$settings->theme}/css/component-product-list.css">
   <link rel="stylesheet" type="text/css" href="/design/{$settings->theme}/css/ui-sort.css">
+  <link rel="stylesheet" type="text/css" href="/design/{$settings->theme}/css/ui-sort.css">
 
   <link rel="stylesheet" type="text/css" href="/slider/OwlCarousel2-2.2.1/dist/assets/owl.carousel.min.css" media="screen" />
   <link rel="stylesheet" type="text/css" href="/slider/OwlCarousel2-2.2.1/dist/assets/owl.theme.green.min.css" media="screen" />
