@@ -642,7 +642,7 @@ function process_product($params) {
                 }
 
                 $query = $simpla->db->placehold("INSERT IGNORE INTO __tags SET type=?, object_id=?, value=?", 'product', intval($productId), $value);
-                $simpla->db->query($query);
+                //$simpla->db->query($query);
 
                 if(!$simpla->tags->get_tag((string)$value,'sdsd'))
                 {
@@ -750,7 +750,7 @@ function process_product($params) {
                     continue;
                 }
 
-                $query = $simpla->db->placehold("INSERT IGNORE INTO __tags SET type=?, object_id=?, value=?", 'product', intval($product_id), $value);
+                $query = $simpla->db->placehold("INSERT IGNORE INTO __tags SET type=?, object_id=?, value=?", 'product', intval($real_product_id), $value);
                 $simpla->db->query($query);
 
                 if(!$simpla->tags->get_tag((string)$value,'sdsd'))
@@ -851,7 +851,7 @@ function process_product($params) {
                         }
 
                         $query = $simpla->db->placehold("INSERT IGNORE INTO __tags SET type=?, object_id=?, value=?", 'product', intval($pro_id), $value);
-                        $simpla->db->query($query);
+                        //$simpla->db->query($query);
 
                         if(!$simpla->tags->get_tag((string)$value,'sdsd'))
                         {
