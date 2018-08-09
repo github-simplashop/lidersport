@@ -733,11 +733,36 @@ function process_product($params) {
                 $nameForProduct = $grup;
             }
 
+
+
+
             $simpla->variants->log('UPDATE __variants SET name=?, price=?, compare_price=?, stock=?,name=?,pod_zakaz=?, max_sale=?, shop_sclad=?, shop_makarova=?, shop_204=?, shop_mira=?, shop_yog=?, shop_passaj=? WHERE external_id=? LIMIT 1'." $model, $price, $old_price, $kolvo, $variant_n, $zakaz, $max_sale, $shop_sclad, $shop_makarova, $shop_204, $shop_mira, $shop_yog, $shop_passaj, $sku");
             $simpla->db->query('UPDATE __variants SET name=?, price=?, compare_price=?, stock=?,name=?,pod_zakaz=?, max_sale=?, shop_sclad=?, shop_makarova=?, shop_204=?, shop_mira=?, shop_yog=?, shop_passaj=? WHERE external_id=? LIMIT 1', $model, $price, $old_price, $kolvo, $variant_n, $zakaz, $max_sale, $shop_sclad, $shop_makarova, $shop_204, $shop_mira, $shop_yog, $shop_passaj, $sku);
             $simpla->db->query('UPDATE __products SET name=?, body=?, annotation=?, brand_id=?,pod_zakaz=?, max_sale=? WHERE id=? LIMIT 1', $model, $bodyp, $short_name, $brand, $zakaz, $max_sale, $real_product_id);
             //add_cat($category_id,$real_product_id);
             //echo $category_id."==".$real_product_id."<hr />";
+
+
+            foreach ($tags as $value) {
+
+                if($value == '')
+                {
+                    continue;
+                }
+
+                $query = $simpla->db->placehold("INSERT IGNORE INTO __tags SET type=?, object_id=?, value=?", 'product', intval($product_id), $value);
+                $simpla->db->query($query);
+
+                if(!$simpla->tags->get_tag((string)$value,'sdsd'))
+                {
+                    $tag = new stdClass;
+                    $tag->name = $value;
+
+                    $simpla->tags->add_tag($tag);
+
+                }
+            }
+
             if (!empty($allsv)) {
                 $simpla->db->query('DELETE FROM __options WHERE product_id=?', $productId);
 

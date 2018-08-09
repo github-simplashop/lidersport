@@ -1,6 +1,8 @@
 <?PHP
 
 
+ini_set('max_execution_time', 200000000);
+set_time_limit(200000000);
 
 
 error_reporting(E_ALL ^ E_NOTICE);
@@ -586,6 +588,10 @@ function process_product($params) {
             $tags = array();
 
 
+
+
+
+
         $brand = 0;
         if (isset($params['brand'])) {
             $brand = process_brand(trim($params['brand']));
@@ -630,6 +636,10 @@ function process_product($params) {
         $simpla->db->query('SELECT id FROM __products WHERE external_id=? LIMIT 1', $sku);
         $productId = $simpla->db->result('id');
         if ($productId > 0) {
+
+
+
+
 
 
             foreach ($tags as $value) {
@@ -731,11 +741,38 @@ function process_product($params) {
                 $nameForProduct = $grup;
             }
 
+
+
+
+
             $simpla->variants->log('UPDATE __variants SET name=?, price=?, compare_price=?, stock=?,name=?,pod_zakaz=?, max_sale=?, shop_sclad=?, shop_makarova=?, shop_204=?, shop_mira=?, shop_yog=?, shop_passaj=? WHERE external_id=? LIMIT 1'." $model, $price, $old_price, $kolvo, $variant_n, $zakaz, $max_sale, $shop_sclad, $shop_makarova, $shop_204, $shop_mira, $shop_yog, $shop_passaj, $sku");
             $simpla->db->query('UPDATE __variants SET name=?, price=?, compare_price=?, stock=?,name=?,pod_zakaz=?, max_sale=?, shop_sclad=?, shop_makarova=?, shop_204=?, shop_mira=?, shop_yog=?, shop_passaj=? WHERE external_id=? LIMIT 1', $model, $price, $old_price, $kolvo, $variant_n, $zakaz, $max_sale, $shop_sclad, $shop_makarova, $shop_204, $shop_mira, $shop_yog, $shop_passaj, $sku);
             $simpla->db->query('UPDATE __products SET name=?, body=?, annotation=?, brand_id=?,pod_zakaz=?, max_sale=? WHERE id=? LIMIT 1', $model, $bodyp, $short_name, $brand, $zakaz, $max_sale, $real_product_id);
             //add_cat($category_id,$real_product_id);
             //echo $category_id."==".$real_product_id."<hr />";
+
+
+
+            foreach ($tags as $value) {
+
+                if($value == '')
+                {
+                    continue;
+                }
+
+                $query = $simpla->db->placehold("INSERT IGNORE INTO __tags SET type=?, object_id=?, value=?", 'product', intval($product_id), $value);
+                $simpla->db->query($query);
+
+                if(!$simpla->tags->get_tag((string)$value,'sdsd'))
+                {
+                    $tag = new stdClass;
+                    $tag->name = $value;
+
+                    $simpla->tags->add_tag($tag);
+
+                }
+            }
+
             if (!empty($allsv)) {
                 $simpla->db->query('DELETE FROM __options WHERE product_id=?', $productId);
 
@@ -813,6 +850,8 @@ function process_product($params) {
                 $pro_id = $simpla->db->insert_id();
 
                 if ($pro_id > 0) {
+
+
 
 
 
@@ -1012,6 +1051,7 @@ function clear_dir($dir) {
 }
 
 function add_images($product_id, $izbr) {
+
 
     $simpla = new Simpla();
     $izbr_all = explode(",", $izbr);
